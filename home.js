@@ -60,6 +60,7 @@ function hobbie(show) {
         about(false)
         experience(false)
         contact(false)
+        education(false)
     }
     else div.style.display = "none";
 
