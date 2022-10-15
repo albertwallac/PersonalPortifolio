@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 * {
-    font-family: 'Poppins', sans-serif;    
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -30,6 +30,10 @@ a:focus {
     border-radius: 0;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#portifolio {
+    margin-bottom: 20px;
 }
 
 .navbar-btn {
@@ -61,14 +65,14 @@ a:focus {
     transition: all 0.3s;
     padding: 20px;
     background:
-        linear-gradient(#1c013a,#2e0261,#001ea1, #371163) padding-box,
+        linear-gradient(#1c013a, #2e0261, #001ea1, #371163) padding-box,
         linear-gradient(to right, darkblue, darkorchid) border-box;
     border-radius: 2px;
     border: 4px solid transparent;
     text-shadow: 1px 1px #000000dc;
 }
 
-#sidebar h3{
+#sidebar h3 {
     text-align: center;
 }
 
@@ -83,7 +87,6 @@ a:focus {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
 }
 
 #sidebar ul p {
@@ -161,17 +164,17 @@ a.article:hover {
     min-height: 100vh;
     transition: all 0.3s;
     background:
-        linear-gradient(80deg,#be85ff,#dfc3ff,#b9c6ff, #cb9dff) padding-box,
+        linear-gradient(80deg, #be85ff, #dfc3ff, #b9c6ff, #cb9dff) padding-box,
         linear-gradient(to right, darkblue, darkorchid) border-box;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#about{
+#about {
     margin-left: auto;
     margin-right: auto;
-    width: 70%;    
+    width: 70%;
 }
 
 #content h2 {
@@ -181,26 +184,10 @@ a.article:hover {
     text-align: center;
 }
 
-#content p{
+#content p {
     color: #1c013a;
     font-size: 18px;
     font-weight: 500;
-}
-
-/* Mediaqueries */
-
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-
-    #sidebar.active {
-        margin-left: 0;
-    }
-
-    #sidebarCollapse span {
-        display: none;
-    }
 }
 
 img {
@@ -213,7 +200,7 @@ img {
     display: flex;
     justify-content: center;
     background:
-        linear-gradient(#1c013a,#2e0261,#001ea1, #371163) padding-box,
+        linear-gradient(#1c013a, #2e0261, #001ea1, #371163) padding-box,
         linear-gradient(to right, darkblue, darkorchid) border-box;
     border-radius: 50%;
     border: 6px solid transparent;
@@ -223,7 +210,7 @@ img {
     margin: 85px;
 }
 
-#prof_links{
+#prof_links {
     margin: 85px;
     display: flex;
     align-items: center;
@@ -233,5 +220,82 @@ img {
 #portifolio {
     text-align: center;
     font-size: 20px;
-    font-weight: bolder;    
+    font-weight: bolder;
+}
+
+/* Mediaqueries */
+
+@media (max-width: 768px) {
+    #sidebar {
+        height: 220px;
+        min-width: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: #000d42;
+        display: flex;
+
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    li{
+        text-decoration: none;
+    }
+
+    .Me-Photo {
+        width: 100px;
+    }
+
+    .container {
+        width: 110px;
+    }
+
+    .Name {        
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+
+    .list-unstyled {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Me {
+        margin-right: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #sidebar.active {
+        margin-left: 0;
+    }
+
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+@media (max-width: 714px) {
+    #sidebar {
+        height: 280px;
+    }
+}
+
+@media (max-width: 515px) {
+    #sidebar {
+        height: 300px;
+    }
 }
