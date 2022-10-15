@@ -38,7 +38,7 @@ a:focus {
 
 .navbar-btn {
     box-shadow: none;
-    outline: none !important;
+    outline: none;
     border: none;
 }
 
@@ -128,8 +128,8 @@ a[data-toggle="collapse"] {
 }
 
 ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
+    font-size: 0.9em;
+    padding-left: 30px;
     background: #6d7fcc;
 }
 
@@ -139,7 +139,7 @@ ul.CTAs {
 
 ul.CTAs a {
     text-align: center;
-    font-size: 0.9em !important;
+    font-size: 0.9em;
     display: block;
     border-radius: 5px;
     margin-bottom: 5px;
@@ -152,8 +152,8 @@ a.download {
 
 a.article,
 a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
+    background: #6d7fcc;
+    color: #fff;
 }
 
 /* Content style */
@@ -226,6 +226,7 @@ img {
 /* Mediaqueries */
 
 @media (max-width: 768px) {
+
     #sidebar {
         height: 220px;
         min-width: 100%;
@@ -273,7 +274,7 @@ img {
     }
 
     .Me {
-        margin-right: 60px;
+        margin-right: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -297,5 +298,34 @@ img {
 @media (max-width: 515px) {
     #sidebar {
         height: 300px;
+    }
+    .Me {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 395px) {
+    .Me{
+        margin: 5px;
+    }
+}
+
+@media (max-width: 385px) {
+    #sidebar {
+        flex-direction: column;
+        height: 350px;
+    }
+    .list-unstyled .components{
+        margin: 0;
+    }
+    #portifolio{
+        margin: 0px;
+    }
+    .Name{
+        margin: 0px;
+    }
+    .btn-list{
+        margin-top: 10px;
+        font-size: 14px;
     }
 }
